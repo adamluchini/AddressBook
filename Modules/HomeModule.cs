@@ -15,6 +15,13 @@ namespace AddressBook
       Get["/contact/new"] = _ => {
         return View["newContact.cshtml"];
       };
+      Post["/contactAdded"] = _ => {
+        var newContact = new Contact(Request.Form["contact-first-name"],
+        Request.Form["contact-last-name"],
+        Request.Form["contact-phone"],
+        Request.Form["contact-address"]);
+        return View["contactAdded.cshtml", newContact];
+      };
 
 
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Address Book</title>
+  </head>
+  <body>
+    <h1>Your friend has been Added!<h1>
+      <ul>
+        <li>
+          @Model.GetFirstName() @Model.GetLastName()
+        </li>
+        <li>
+          @Model.GetAddress()
+        </li>
+        <li>
+          @Model.GetPhoneNumber()
+        </li>
+      </ul>
+      <p><a href = "/contact/new">Add someone else</a></p>
+      <p><a href = "/">View everyone in your address book</a></p>
+  </body>
+</html>
