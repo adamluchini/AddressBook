@@ -10,10 +10,10 @@ namespace AddressBook
     {
       Get["/"] = _ => {
         var allContacts = Contact.GetAllContacts();
-        return View["addressbook.cshtml", allContacts];
+        return View["main.cshtml", allContacts];
       };
       Get["/contact/new"] = _ => {
-        return View["newContact.cshtml"];
+        return View["form.cshtml"];
       };
       Post["/contactAdded"] = _ => {
         var newContact = new Contact(Request.Form["contact-first-name"],
