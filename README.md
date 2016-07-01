@@ -12,8 +12,9 @@ _This application allows a user to add a person's first and last name, address, 
 
 * _Clone this repository_
 * _Open Windows Powershell_
-* _and run dnx kestrel in the command line_
-* _Then open Google Chrome to localhost:5004_
+* _Navigate to project folder_*
+* _Run dnx kestrel in the command line_
+* _Open Google Chrome to localhost:5004_
 
 ## Technologies Used
 
