@@ -11,11 +11,12 @@
       <h2>You don't have any friends yet :( </h2>
     }
     <p><a href ="/contact/new">Add a friend's infomation</a></p>
+    <form action="/contacts_deleted" method="post">
+      <button type="submit">Delete Contacts</button>
+    </form>
     @foreach (var Contact in Model)
       {
     <ul>
-      <li>
-
         <h4>@Contact.GetFirstName()</h4>
           <li>
             @Contact.GetFirstName() @Contact.GetLastName()
@@ -26,9 +27,6 @@
           <li>
             @Contact.GetAddress()
           </li>
-
-      </li>
-
     </ul>
     }
 
